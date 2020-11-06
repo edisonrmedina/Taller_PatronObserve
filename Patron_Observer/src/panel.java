@@ -17,6 +17,29 @@ public class panel extends JPanel {
 		add(btn1);
 		add(btn2);
 		add(btn3);
+		btn1.addActionListener(new ButtonListener());
+		btn2.addActionListener(new ButtonListener());
+		btn3.addActionListener(new ButtonListener());
+		
 	}
 	
+	private class ButtonListener implements ActionListener
+	   {
+	      public void actionPerformed (ActionEvent event)
+	      {
+	    	   
+              Object buttObj = event.getSource();
+              
+              if (buttObj == btn1) {
+            	  setBackground(Color.YELLOW);
+              }else if(buttObj == btn2) {
+            	  setBackground(Color.PINK);
+              }else {
+            	  setBackground(Color.GREEN);
+              }
+				  
+				  
+	      }//end of Acti
+	
+}
 }
