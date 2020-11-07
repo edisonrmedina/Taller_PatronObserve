@@ -29,17 +29,23 @@ public class panel extends JPanel {
 	      {
 	    	   
               Object buttObj = event.getSource();
-              
+              Color color1=Color.yellow;
+              Color color2=Color.pink;
+              Color color3=Color.green;
+           
               if (buttObj == btn1) {
-            	  setBackground(Color.YELLOW);
+            	  setBackground(color1);
+            	  System.out.println(nombresColores.COLORESCONNOMBRE.get(color1));
               }else if(buttObj == btn2) {
-            	  setBackground(Color.PINK);
+            	  setBackground(color2);
+            	  System.out.println(nombresColores.COLORESCONNOMBRE.get(color2));
               }else {
-            	  setBackground(Color.GREEN);
+            	  setBackground(color3);
+            	  System.out.println(nombresColores.COLORESCONNOMBRE.get(color3));
               }
 				  
 				  
-	      }//end of Acti
+	      }//end of Action
 	
 }
 }
