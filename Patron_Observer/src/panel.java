@@ -5,9 +5,6 @@ import java.util.ArrayList;
 
 import javax.swing.*;
 
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-
 public class panel extends JPanel implements observable  {
 
 	private User btn1;
